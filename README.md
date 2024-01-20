@@ -1,14 +1,63 @@
-Arquivos do módulo inicial de Node + Typescript, da estrutura MVC aplicada.
+Initial Node + Typescript module files, following the applied MVC structure.
 
-### Pré-requisitos globais:
-`npm i -g nodemon typescript ts-node`
+## Getting Started
 
-### Instalação
-`npm install`
+First, run the development server:
 
-### Para rodar o projeto
-`npm run dev`
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-### ts-node-dev ./src/server.ts === dev
+### Project Description
+ - Technical Test for Full Stack Developer Intern by Sigma Software;
+ - Back-End API + Front-End API Consuming;
 
-### // "start": "nodemon -e ts,json,mustache src/server.ts"
+### Technologies Used
+ - Node.js (Express), Typescript, PostgreSQL, Prisma;
+
+------------------------------------------------------
+
+### Routes - USER:
+
+ ## /user/all
+    - description: GET all users
+
+ ## /user/info/view/:id
+    - description: GET users by ID
+    
+ ## /user/info/edit/:id
+    - description: PUT users by ID
+
+ ## /user/new
+    - description: POST users
+
+ ## /user/drop/:id
+    - description: DELETE users by ID
+
+------------------------------------------------------
+
+### Routes - PERMISSIONS:
+
+ ## /permission/all
+    - description: GET all permissions
+
+ ## /permission/new
+    - description: POST permissions
+
+------------------------------------------------------
+
+## Installation
+
+1. Repository Clone: `git clone https://github.com/gabrielanselmoa/Node-API-Backend`
+2. Navigate to your project directory: `cd node-api-backend`
+3. Install all dependencies: `npm install` ou `yarn install`
+
+### Author
+
+ - Gabriel Anselmo - Web Developer - 2024

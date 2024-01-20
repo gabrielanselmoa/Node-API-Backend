@@ -4,7 +4,6 @@ import api from "./routes/api";
 import cors from "cors";
 
 dotenv.config();
-
 const server = express();
 
 server.use(cors());
