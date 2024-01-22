@@ -1,16 +1,18 @@
-
 {
-    "version": 2,
-    "builds": [
-        {
-            "src": "src/server.ts",
-            "use": "@vercel/node"
+  "builds": [
+    {
+      "src": "src/server.ts",
+      "use": "@vercel/node",
+      "config": {
+        "maxLambdaSize": "50mb"
+      },
+      "functions": {
+        "api/*": {
+          "includeFiles": ["prisma/**"],
+          "runtime": "nodejs16.x"
         }
-    ],
-    "routes": [
-        {
-            "src": "(.*)",
-            "dest": "src/server.ts"
-        }
-    ]
+      }
+    }
+  ],
+  "version": 2
 }
