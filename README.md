@@ -21,6 +21,9 @@ bun dev
 ### Technologies Used
  - Node.js (Express), Typescript, PostgreSQL, Prisma;
 
+### Documentation - Swagger
+ - URL: http://localhost:3000/api-docs/
+
 ------------------------------------------------------
 
 ### Routes - USER:
